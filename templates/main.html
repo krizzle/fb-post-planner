@@ -1,0 +1,30 @@
+<div class="container" style='top: 70px; position: relative; width: 500px'>
+
+        <form role="form" id="post-form" action="/" method="post" class="col-md-4">
+          <div class="form-group" style='width: 428px'>
+            <label for="exampleInputEmail1">Update Status: </label>
+            <div class="fbpost">
+            	<textarea name="message" class="form-control" id="message" required placeholder="What's on your mind?"></textarea>
+            </div>
+            <div align="center" style='width: 100%' class="button">
+            <div id="post-now" type="submit" class="btn btn-default btn-facebook">Post Now</div>
+            </div><hr>
+            <input type="hidden" name="access_token" value="">
+            <input type="hidden" name="fbID" value="">
+            <div style='width: 750px' class="form-group">
+                <div class='input-group date' id='datetimepicker'>
+                    <input type='text' class="form-control" name="date_to_post" placeholder="Date/Time"/>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar" required></span></span>
+                </div>
+            </div>
+          </div>
+          <div align="right" style='width: 425px' class="button">
+	          <button id="button" type="submit" class="btn btn-default btn-facebook">Schedule Post</button>
+          </div>
+        </form>
+
+        <div class="fb-like" data-href="https://developers.facebook.com/apps/332766106902973/dashboard/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+</div>
+
+</body>
+</html>

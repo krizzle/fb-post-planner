@@ -1,0 +1,40 @@
+<html>
+<body>
+<div class="container" style='top: 70px; width: 500px;; position: relative;'>
+
+
+    <div class="postlist">
+    	<div><h3>Your Posts</h3></div>
+    	{% for post in posts %}
+    	
+       		<div class="panel panel-info">
+			  <div class="panel-heading">
+			    <h3 class="panel-title">{{post.date_to_post}}
+			    	<a class="badge pull-right" href="/delete/{{post.key.id()}}">X</a>
+			    </h3>
+			    
+			  </div>
+			  <div class="panel-body">
+			    {{post.message}}
+			  </div>
+			</div>
+    	{% else %}
+    	
+    	<div>
+       	 	No scheduled posts.
+       	 </div>
+       	 {% endfor %}
+
+    </div>
+    	
+<br>
+
+    
+
+
+    	<!-- End of Content-->
+        <div class="fb-like" data-href="https://developers.facebook.com/apps/332766106902973/dashboard/" data-layout="standard" data-action="like" data-show-faces="false" data-share="false"></div>
+
+</div>
+</body>
+</html>
